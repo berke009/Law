@@ -1,36 +1,29 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Ahmet Can Erendor Attorneys-at-Law — web
 
-## Getting Started
+Minimal Next.js marketing site: hero, about, contact, and directory references. Copy source: `docs/website-copy.md` (PAFAAA-25).
 
-First, run the development server:
+## Develop
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
+pnpm install
 pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Production check:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+pnpm build
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Deploy
 
-## Learn More
+**GitHub:** Create an empty public repository `ahmet-can-erendor-law` under the `berke009` account (no README/license from the GitHub UI). From this directory:
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+git remote add origin https://github.com/berke009/ahmet-can-erendor-law.git
+git push -u origin main
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Use a PAT with `repo` scope (or GitHub CLI) if prompted. The automation PAT used in Paperclip did not include repository creation; the board may need to create the remote once.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+**Vercel:** *Add New Project* → import the GitHub repo → framework *Next.js*, install/build commands default to `pnpm` if detected, or set build to `pnpm build`. Deploy via the Vercel dashboard or Cursor’s Vercel MCP once the repo exists.
