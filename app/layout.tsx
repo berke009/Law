@@ -16,15 +16,15 @@ const body = DM_Sans({
 
 export const metadata: Metadata = {
   title: {
-    default: "Ahmet Can Erendor Attorneys-at-Law",
-    template: "%s | Ahmet Can Erendor Attorneys-at-Law",
+    default: "Av. Ahmet Can Erendor",
+    template: "%s | Av. Ahmet Can Erendor",
   },
   description:
-    "Ahmet Can Erendor Attorneys-at-Law | Kilis-based Turkish firm for corporate, M&A, competition, compliance, disputes & TMT. Top-tier directory rankings.",
+    "Strategic legal counsel in Istanbul for corporate, technology, disputes, and real estate—clear advice for leaders who need momentum with defensibility.",
   openGraph: {
-    title: "Ahmet Can Erendor Attorneys-at-Law",
+    title: "Av. Ahmet Can Erendor",
     description:
-      "Sophisticated Turkish legal counsel from Kilis to clients worldwide. Corporate, M&A, competition, compliance, disputes & TMT.",
+      "Modern, business-minded legal counsel in Istanbul. Corporate, technology, disputes, and projects—grounded in the real world.",
     type: "website",
   },
 };

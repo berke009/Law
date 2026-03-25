@@ -6,6 +6,20 @@
   --muted: #5c5852;
   --accent: #6b5a45;
   --line: rgba(20, 18, 15, 0.08);
+  --navy: #0f172a;
+  --navy-muted: #94a3b8;
+}
+
+@keyframes hero-drift {
+  0% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  50% {
+    transform: translate3d(-2%, 1%, 0) scale(1.04);
+  }
+  100% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
 }
 
 @theme inline {
