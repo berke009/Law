@@ -17,13 +17,12 @@ pnpm build
 
 ## Deploy
 
-**GitHub:** Create an empty public repository `ahmet-can-erendor-law` under the `berke009` account (no README/license from the GitHub UI). From this directory:
+**GitHub:** Source of truth is **[berke009/Law](https://github.com/berke009/Law)** (`main`). Clone via SSH:
 
 ```bash
-git remote add origin https://github.com/berke009/ahmet-can-erendor-law.git
-git push -u origin main
+git clone git@github.com:berke009/Law.git
 ```
 
-Use a PAT with `repo` scope (or GitHub CLI) if prompted. The automation PAT used in Paperclip did not include repository creation; the board may need to create the remote once.
+or HTTPS with credentials as usual.
 
-**Vercel:** *Add New Project* → import the GitHub repo → framework *Next.js*, install/build commands default to `pnpm` if detected, or set build to `pnpm build`. Deploy via the Vercel dashboard or Cursor’s Vercel MCP once the repo exists.
+**Vercel:** *Add New Project* → import **Law** from GitHub → framework *Next.js*, build `pnpm build`. Use the Vercel dashboard or Cursor’s Vercel MCP. Headless deploy from Paperclip requires a `VERCEL_TOKEN` in the agent environment.
